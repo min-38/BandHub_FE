@@ -9,19 +9,31 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@auth/core": "^0.34.2",
+    "@tanstack/react-query": "^5.69.0",
+    "@tanstack/react-query-devtools": "^5.69.0",
+    "next": "15.2.3",
+    "next-auth": "^5.0.0-beta.25",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "next": "15.2.3"
+    "react-turnstile": "^1.1.4"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
+    "@tanstack/eslint-plugin-query": "^5.68.0",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "@tailwindcss/postcss": "^4",
-    "tailwindcss": "^4",
     "eslint": "^9",
     "eslint-config-next": "15.2.3",
-    "@eslint/eslintrc": "^3"
+    "msw": "^2.7.3",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  },
+  "msw": {
+    "workerDirectory": [
+      "public"
+    ]
   }
 }
